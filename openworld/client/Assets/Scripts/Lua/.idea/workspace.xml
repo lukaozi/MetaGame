@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc65b46d-d5b0-4a5b-99a2-d34847716631" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CSharp/Tolua/Editor/Custom/CustomSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp/Tolua/LuaConst.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Libs/Login/Handler/LoginNetHandler.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Libs/Login/Handler/LoginReconnectHandler.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Libs/Login/LoginMgr.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Editor/Custom.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Editor/Custom/CustomSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Editor/Custom/CustomSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend/FindObjectWindow.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend/FindObjectWindow.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend/FindObjectWindow/FindObjectWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend/FindObjectWindow/FindObjectWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend/FindObjectWindow/FindObjectWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/EditorExtend/FindObjectWindow/FindObjectWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/Lua/Editor/CLuaSeriazablePropertyItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/Lua/Editor/CLuaSeriazablePropertyItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/Lua/Editor/LuaBehaviourBridgeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/Lua/Editor/LuaBehaviourBridgeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/Lua/Editor/LuaSerializedDrawerItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/Lua/Editor/LuaSerializedDrawerItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/Util.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/Util.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Libs/Util/SingletonMonoBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/Game/Libs/Util/SingletonMonoBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/Game/Moudle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Game.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Game.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Game.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Game.lua.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Game.lua.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main22.lua.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Main22.lua.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/DelegateFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/DelegateFactory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/EnterLuaScheduleWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/EnterLuaScheduleWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaBinder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaBinder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaInterface_DebuggerWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaInterface_DebuggerWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaInterface_InjectTypeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaInterface_InjectTypeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaInterface_LuaInjectionStationWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaInterface_LuaInjectionStationWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaMgrBridgeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaMgrBridgeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaProfilerWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/LuaProfilerWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/SimpleScheduleWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/SimpleScheduleWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/SingletonMonoBehaviour_LuaMgrBridgeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/SingletonMonoBehaviour_LuaMgrBridgeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationBlendModeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationBlendModeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationClipWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationClipWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationStateWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationStateWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimationWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimatorWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AnimatorWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ApplicationWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ApplicationWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AssetBundleWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AssetBundleWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AsyncOperationWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AsyncOperationWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AudioBehaviourWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AudioBehaviourWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AudioClipWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AudioClipWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AudioSourceWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_AudioSourceWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_BehaviourWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_BehaviourWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_BoxColliderWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_BoxColliderWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CameraClearFlagsWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CameraClearFlagsWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CameraWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CameraWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CapsuleColliderWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CapsuleColliderWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CharacterControllerWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_CharacterControllerWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ColliderWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ColliderWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ComponentWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ComponentWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_GameObjectWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_GameObjectWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_InputWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_InputWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_KeyCodeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_KeyCodeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_LightTypeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_LightTypeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_LightWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_LightWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MaterialWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MaterialWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MeshColliderWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MeshColliderWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MeshRendererWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MeshRendererWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MonoBehaviourWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_MonoBehaviourWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ParticleSystemWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ParticleSystemWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_PhysicsWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_PhysicsWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_PlayModeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_PlayModeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_QualitySettingsWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_QualitySettingsWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_QueueModeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_QueueModeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RenderSettingsWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RenderSettingsWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RenderTextureWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RenderTextureWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RendererWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RendererWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ResourcesWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ResourcesWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RigidbodyWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_RigidbodyWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ScreenWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ScreenWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ShaderWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_ShaderWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SkinWeightsWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SkinWeightsWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SkinnedMeshRendererWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SkinnedMeshRendererWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SleepTimeoutWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SleepTimeoutWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SpaceWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SpaceWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SphereColliderWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_SphereColliderWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_Texture2DWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_Texture2DWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TextureWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TextureWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TimeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TimeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TrackedReferenceWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TrackedReferenceWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TransformWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_TransformWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_WWWWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_WWWWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_WrapModeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/Generate/UnityEngine_WrapModeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/LuaConst.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/LuaConst.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_EventObjectWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_EventObjectWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaConstructorWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaConstructorWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaFieldWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaFieldWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaMethodWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaMethodWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaOutWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaOutWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaPropertyWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/LuaInterface_LuaPropertyWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_ArrayWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_ArrayWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_DictionaryWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_DictionaryWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_Dictionary_KeyCollectionWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_Dictionary_KeyCollectionWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_Dictionary_ValueCollectionWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_Dictionary_ValueCollectionWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_KeyValuePairWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_KeyValuePairWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_ListWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_Generic_ListWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_IEnumeratorWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_IEnumeratorWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_ObjectModel_ReadOnlyCollectionWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_Collections_ObjectModel_ReadOnlyCollectionWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_DelegateWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_DelegateWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_EnumWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_EnumWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_NullObjectWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_NullObjectWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_ObjectWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_ObjectWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_StringWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_StringWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_TypeWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/System_TypeWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/UnityEngine_CoroutineWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/UnityEngine_CoroutineWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/UnityEngine_ObjectWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/BaseType/UnityEngine_ObjectWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaAttributes.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaBaseRef.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaBaseRef.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaBeatEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaBeatEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaDLL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaDLL.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaException.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaFileUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaFileUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaFunction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaFunction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaMatchType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaMatchType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaMethodCache.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaMethodCache.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaMisc.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaMisc.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaStackOp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaStackOp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaStatePtr.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaStatePtr.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaStatic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaStatic.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaTable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaThread.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaThread.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaUnityLibs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaUnityLibs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaValueType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/LuaValueType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/ObjectPool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/ObjectPool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/ObjectTranslator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/ObjectTranslator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/ToLua.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/ToLua.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/TypeChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/TypeChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/TypeTraits.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Core/TypeTraits.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_EventObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_EventObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaConstructor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaConstructor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaField.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaField.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaMethod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaMethod.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaProperty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_LuaInterface_LuaProperty.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Delegate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Delegate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Enum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Enum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Object.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Object.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_String.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_String.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Type.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_System_Type.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_GameObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_GameObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_Input.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_Input.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_Object.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_Object.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_RectTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/Extend/ToLua_UnityEngine_RectTransform.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/ToLuaExport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/ToLuaExport.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/ToLuaMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/ToLuaMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/ToLuaTree.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Editor/ToLuaTree.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/01_HelloWorld.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/01_HelloWorld/HelloWorld.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/01_HelloWorld/HelloWorld.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/01_HelloWorld/HelloWorld.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/01_HelloWorld/HelloWorld.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/02_ScriptsFromFile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/03_CallLuaFunction.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/03_CallLuaFunction/CallLuaFunction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/03_CallLuaFunction/CallLuaFunction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/03_CallLuaFunction/CallLuaFunction.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/03_CallLuaFunction/CallLuaFunction.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/04_AccessingLuaVariables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/04_AccessingLuaVariables/AccessingLuaVariables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/04_AccessingLuaVariables/AccessingLuaVariables.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/04_AccessingLuaVariables/AccessingLuaVariables.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/04_AccessingLuaVariables/AccessingLuaVariables.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/05_LuaCoroutine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/05_LuaCoroutine/LuaCoroutine.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/05_LuaCoroutine/LuaCoroutine.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/05_LuaCoroutine/TestCoroutine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/05_LuaCoroutine/TestCoroutine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/06_LuaCoroutine2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/06_LuaCoroutine2/Coroutine.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/06_LuaCoroutine2/Coroutine.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/06_LuaCoroutine2/TestCoroutine2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/06_LuaCoroutine2/TestCoroutine2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/07_LuaThread.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/07_LuaThread/TestLuaThread.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/07_LuaThread/TestLuaThread.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/07_LuaThread/TestThread.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/07_LuaThread/TestThread.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/08_AccessingArray.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/08_AccessingArray/AccessingArray.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/08_AccessingArray/AccessingArray.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/08_AccessingArray/AccessingArray.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/08_AccessingArray/AccessingArray.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_Dictionary_int_TestAccountWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_Dictionary_int_TestAccountWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_Dictionary_int_TestAccount_KeyCollectionWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_Dictionary_int_TestAccount_KeyCollectionWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_Dictionary_int_TestAccount_ValueCollectionWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_Dictionary_int_TestAccount_ValueCollectionWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_KeyValuePair_int_TestAccountWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/System_Collections_Generic_KeyValuePair_int_TestAccountWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/TestAccountWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/TestAccountWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/UseDictionary.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/UseDictionary.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/UseDictionary.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/09_Dictionary/UseDictionary.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/10_Enum.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/10_Enum/AccessingEnum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/10_Enum/AccessingEnum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/10_Enum/AccessingEnum.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/10_Enum/AccessingEnum.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/TestDelegate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/TestDelegate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/TestEventListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/TestEventListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/TestEventListenerWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/TestEventListenerWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/UseDelegate.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/11_Delegate/UseDelegate.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/12_GameObject.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/12_GameObject/TestGameObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/12_GameObject/TestGameObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/12_GameObject/TestGameObject.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/12_GameObject/TestGameObject.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/13_CustomLoader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/13_CustomLoader/CustomLoader.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/13_CustomLoader/CustomLoader.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/13_CustomLoader/TestCustomLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/13_CustomLoader/TestCustomLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/14_Out.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/14_Out/TestOut.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/14_Out/TestOut.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/14_Out/TestOutArg.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/14_Out/TestOutArg.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/ProtoBuffer.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/ProtoBuffer.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/TestProtoBuffer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/TestProtoBuffer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/TestProtol.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/TestProtol.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/TestProtolWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/TestProtolWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/common.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/common.proto.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/person.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/15_ProtoBuffer/person.proto.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/16_Int64.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/16_Int64/TestInt64.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/16_Int64/TestInt64.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/16_Int64/TestInt64.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/16_Int64/TestInt64.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/17_Inherit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/17_Inherit/Inherit.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/17_Inherit/Inherit.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/17_Inherit/TestInherit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/17_Inherit/TestInherit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/18_Bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/18_Bundle/TesetAssetBundle.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/18_Bundle/TesetAssetBundle.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/18_Bundle/TestABLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/18_Bundle/TestABLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/19_cjson.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/19_cjson/TestCJson.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/19_cjson/TestCJson.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/19_cjson/testcjson.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/19_cjson/testcjson.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/20_utf8.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/20_utf8/TestUTF8.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/20_utf8/TestUTF8.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/20_utf8/utf8.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/20_utf8/utf8.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/21_String.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/21_String/TestString.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/21_String/TestString.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/21_String/TestString.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/21_String/TestString.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/22_Reflection.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/22_Reflection/TestReflection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/22_Reflection/TestReflection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/22_Reflection/TestReflection.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/22_Reflection/TestReflection.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/23_List.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/23_List/UseList.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/23_List/UseList.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/23_List/UseList.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/23_List/UseList.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/24_Struct.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/24_Struct/PassStruct.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/24_Struct/PassStruct.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/24_Struct/Struct.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/24_Struct/Struct.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Performance.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Performance/Performance.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Performance/Performance.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Performance/TestPerformance.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Performance/TestPerformance.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/Protol.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/Protol/common_pb.lua.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/Protol/common_pb.lua.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/Protol/person_pb.lua.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/Protol/person_pb.lua.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestErrorStack.lua.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestErrorStack.lua.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestLoader.lua.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestLoader.lua.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestLuaCoroutine.lua.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestLuaCoroutine.lua.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestPerf.lua.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/TestPerf.lua.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/ToLuaInjectionTestInjector.lua.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/Lua/ToLuaInjectionTestInjector.lua.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/jsonexample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/Resources/jsonexample.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestInstantiate2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestLuaStack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestLuaStack.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestLuaStack.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestErrorStack/TestLuaStack.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/BaseTestWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/BaseTestWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/TestInjection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/TestInjection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/TestInjection.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/TestInjection.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/ToLuaInjectionTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/ToLuaInjectionTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/ToLuaInjectionTestWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestInjection/ToLuaInjectionTestWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestExportWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestExportWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestExport_SpaceWrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestExport_SpaceWrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestOverload.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestOverload.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestOverload.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Examples/TestOverload/TestOverload.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/CustomCecilRocks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/CustomCecilRocks/MethodBodyRocks.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/CustomCecilRocks/MethodBodyRocks.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToLuaInjection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToLuaInjection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToLuaInjectionHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToLuaInjectionHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToLuaText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToLuaText.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToluaInjectionBlackListPanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/Editor/ToluaInjectionBlackListPanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/InjectionBlackList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/InjectionBlackList.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/InjectionBridgeEditorInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/InjectionBridgeEditorInfo.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/LuaInjectionSkipPaths.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/LuaInjectionSkipPaths.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/LuaInjectionStation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Injection/LuaInjectionStation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/Build.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/Build.bat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Injection.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Injection/InjectionBridgeInfo.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Injection/InjectionBridgeInfo.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Injection/LuaInjectionBus.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Injection/LuaInjectionBus.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Injection/LuaInjectionStation.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Injection/LuaInjectionStation.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Reflection.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Reflection/BindingFlags.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Reflection/BindingFlags.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Timer.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/Timer.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/ValueType.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/ValueType.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/coroutine.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/System/coroutine.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Bounds.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Bounds.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Color.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Color.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/LayerMask.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/LayerMask.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Mathf.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Mathf.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Plane.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Plane.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Profiler.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Profiler.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Quaternion.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Quaternion.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Ray.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Ray.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/RaycastHit.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/RaycastHit.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Time.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Time.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Touch.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Touch.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Vector2.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Vector2.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Vector3.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Vector3.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Vector4.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/UnityEngine/Vector4.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/cjson.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/cjson/util.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/cjson/util.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/event.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/event.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/bc.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/bc.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/bcsave.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/bcsave.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_arm.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_arm.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_arm64.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_arm64.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_arm64be.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_arm64be.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mips.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mips.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mips64.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mips64.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mips64el.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mips64el.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mipsel.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_mipsel.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_ppc.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_ppc.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_x64.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_x64.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_x86.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dis_x86.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dump.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/dump.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/p.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/p.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/v.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/v.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/zone.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/jit/zone.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/list.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/list.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/lpeg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/lpeg/re.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/lpeg/re.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/ltn12.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/ltn12.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/mime.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/mime.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/misc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/misc/functions.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/misc/functions.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/misc/strict.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/misc/strict.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/misc/utf8.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/misc/utf8.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/containers.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/containers.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/decoder.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/decoder.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/descriptor.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/descriptor.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/encoder.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/encoder.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/listener.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/listener.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/protobuf.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/protobuf.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/text_format.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/text_format.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/type_checkers.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/type_checkers.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/wire_format.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/protobuf/wire_format.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/slot.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/slot.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/ftp.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/ftp.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/headers.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/headers.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/http.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/http.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/mbox.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/mbox.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/smtp.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/smtp.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/tp.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/tp.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/url.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/socket/url.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/tolua.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/tolua.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/typeof.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Lua/typeof.lua.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaCoroutine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaCoroutine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaLooper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaLooper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaProfiler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaProfiler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaResLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Misc/LuaResLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaConstructor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaConstructor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaField.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaField.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaMethod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaMethod.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaProperty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaProperty.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaReflection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/Reflection/LuaReflection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToLua/readme.txt.meta" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game/Libs/Module/BaseObject.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Game/Game.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game/Libs/Module/BaseObject.lua.meta">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game/Libs/Tween/TweenComponent.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Game/Game.lua" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="222" />
+    <option name="width" value="1605" />
+    <option name="height" value="1392" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lua" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lua" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lua" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lua" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Libs" type="462c0819:PsiDirectoryNode" />
+              <item name="Module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lua" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Libs" type="462c0819:PsiDirectoryNode" />
+              <item name="Tween" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc65b46d-d5b0-4a5b-99a2-d34847716631" name="Default Changelist" comment="" />
+      <created>1637577038126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637577038126</updated>
+      <workItem from="1637577042703" duration="60000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="60000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="148" y="0" width="1070" height="928" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="LuaCheck" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Game/Libs/Tween/TweenComponent.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Libs/Module/BaseObject.lua.meta">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Libs/Module/BaseObject.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Game.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
