@@ -1,6 +1,6 @@
-/openworld/client/Library
-/openworld/client/Logs
-/openworld/client/Temp
-/openworld/client/client.sln
-/openworld/client/.idea
-/openworld/client/obj
+/client/Library
+/client/Logs
+/client/Temp
+/client/client.sln
+/client/.idea
+/client/obj

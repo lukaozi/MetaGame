@@ -61,7 +61,9 @@
      <Compile Include="Assets\ThirdParty\ToLua\Examples\11_Delegate\TestEventListenerWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\LuaExtend\CLuaSocketHandler.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\LuaBehaviourBridgeEvent.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_LightTypeWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaThread.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_WWWWrap.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaMethodCache.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\ObjectTranslator.cs" />
@@ -69,13 +71,18 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Core\GameEnter\EnterLuaSchedule.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestErrorStack\TestInstantiate.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Misc\LuaLooper.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SpaceWrap.cs" />
      <Compile Include="Assets\Scripts\Gb.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\01_HelloWorld\HelloWorld.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\LuaExtend\CLuaBuffer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaMisc.cs" />
      <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_Generic_ListWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AudioSourceWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RigidbodyWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaStatePtr.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AsyncOperationWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CapsuleColliderWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\Listener\EnableListener.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\DonDestroyRoot.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Res\ResLoadHandlerByResources.cs" />
@@ -83,10 +90,12 @@
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_Generic_DictionaryWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Reflection\LuaConstructor.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_DelegateWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_InputWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_TypeWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\20_utf8\TestUTF8.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\TypeTraits.cs" />
      <Compile Include="Assets\Scripts\CSharp\ToolCenter\Util\CoroutineManager.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CameraClearFlagsWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaTable.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\LuaInterface_EventObjectWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\EditorExtend\AutoRelease\AutoBeginVertical.cs" />
@@ -95,7 +104,9 @@
      <Compile Include="Assets\ThirdParty\ToLua\Reflection\LuaProperty.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\LuaBehaviourBridgeEventType.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\09_Dictionary\UseDictionary.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaProfilerWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\13_CustomLoader\TestCustomLoader.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimatorWrap.cs" />
      <Compile Include="Assets\Scripts\Player\AniTriggerController.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\07_LuaThread\TestLuaThread.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\LuaMgrBridge.cs" />
@@ -103,30 +114,44 @@
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_Generic_KeyValuePairWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Misc\LuaResLoader.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\02_ScriptsFromFile\ScriptsFromFile.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MaterialWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_PhysicsWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\15_ProtoBuffer\TestProtolWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\18_Bundle\TestABLoader.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_GameObjectWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\UnityEngine_CoroutineWrap.cs" />
      <Compile Include="Assets\Scripts\Player\ActorController.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\SingletonMonoBehaviour_LuaMgrBridgeWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ComponentWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestErrorStack\TestLuaStack.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestInjection\TestInjection.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Reflection\LuaReflection.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_PlayModeWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\LuaInterface_LuaPropertyWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Res\ResLoadHandler.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationClipWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RenderTextureWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CameraWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\ClassExtend.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Core\GameEnter\HotUpdate\HotUpdateSchedule.cs" />
      <Compile Include="Assets\Scripts\Player\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_KeyCodeWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ShaderWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\14_Out\TestOutArg.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestOverload\TestExport_SpaceWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaAttributes.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_ArrayWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaValueType.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MonoBehaviourWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\09_Dictionary\System_Collections_Generic_KeyValuePair_int_TestAccountWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\LuaBehaviourBridge.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\10_Enum\AccessingEnum.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Reflection\LuaMethod.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\ObjectPool.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\24_Struct\PassStruct.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ResourcesWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Core\GameEnter\GameEnterSchedule.cs" />
      <Compile Include="Assets\Scripts\Player\TestJoyStick.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Event\Event.cs" />
@@ -134,17 +159,25 @@
      <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaState.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\SocketEx.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_Texture2DWrap.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnUpdate.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\SocketRecvThread.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestErrorStack\TestInstantiate2.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestInjection\ToLuaInjectionTest.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\15_ProtoBuffer\TestProtoBuffer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaBinder.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\LuaInterface_LuaFieldWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_ObjectModel_ReadOnlyCollectionWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\ByteArray.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\08_AccessingArray\AccessingArray.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SkinnedMeshRendererWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Misc\LuaClient.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MeshColliderWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaInterface_DebuggerWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TimeWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TransformWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Event\EventNotifier.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaInterface_LuaInjectionStationWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\19_cjson\TestCJson.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Res\Res.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\ToLua.cs" />
@@ -153,121 +186,88 @@
      <Compile Include="Assets\Scripts\Player\FSMOnExit.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\23_List\UseList.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\Singleton.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SleepTimeoutWrap.cs" />
      <Compile Include="Assets\Scripts\Player\FSMClearSignals.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\TypeChecker.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Injection\LuaInjectionStation.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationStateWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ApplicationWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Timer\TimeMgr.cs" />
      <Compile Include="Assets\Scripts\Player\RootMotionController.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaFileUtils.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_BoxColliderWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_ObjectWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\SimpleSchedule\SimpleSchedule.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ScreenWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_Generic_Dictionary_KeyCollectionWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\UI\SubPrefab\SubPrefabBridge.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccountWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaStatic.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\Listener\ListenerDelegate.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccount_KeyCollectionWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ParticleSystemWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_EnumWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaStackOp.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\SimpleScheduleWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\05_LuaCoroutine\TestCoroutine.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaEvent.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\NetUtil.cs" />
      <Compile Include="Assets\Scripts\Player\OnGroundSensor.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_QueueModeWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\UnityEngine_ObjectWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\SimpleSchedule\SimpleScheduleSequence.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TextureWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TrackedReferenceWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaBeatEvent.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_LightWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaException.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Misc\LuaCoroutine.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\EditorExtend\FindObjectWindow\FindObjectWindow.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\LuaInterface_LuaOutWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\Performance\TestPerformance.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaInterface_InjectTypeWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_IEnumeratorWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestOverload\TestExportWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\NetMgr.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaMgrBridgeWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\LuaSerializebleField.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RenderSettingsWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_BehaviourWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_QualitySettingsWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_Generic_Dictionary_ValueCollectionWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\22_Reflection\TestReflection.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Res\ResLoadHandlerByAssetBundle.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RendererWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationBlendModeWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaMatchType.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_WrapModeWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CharacterControllerWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\06_LuaCoroutine2\TestCoroutine2.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\DelegateFactory.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Res\ResMgr.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Misc\LuaProfiler.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaBaseRef.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AssetBundleWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\03_CallLuaFunction\CallLuaFunction.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaFunction.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SkinWeightsWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\LockQueue.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestInjection\BaseTestWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MeshRendererWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SphereColliderWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\EnterLuaScheduleWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AudioBehaviourWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\11_Delegate\TestDelegate.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\LuaInterface_LuaConstructorWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\EditorExtend\AutoRelease\AutoChangeBkColor.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AudioClipWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ColliderWrap.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\09_Dictionary\TestAccountWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\GameEnter.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\21_String\TestString.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\LuaConst.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Reflection\LuaField.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_NullObjectWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_KeyCodeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_GameObjectWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_BoxColliderWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_LightTypeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TrackedReferenceWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\SimpleScheduleWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ShaderWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationClipWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CameraWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SpaceWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RenderTextureWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AudioClipWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_PlayModeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_WrapModeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ColliderWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaInterface_LuaInjectionStationWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CharacterControllerWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ScreenWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SkinWeightsWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaMgrBridgeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SkinnedMeshRendererWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SleepTimeoutWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\DelegateFactory.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CameraClearFlagsWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_WWWWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MeshColliderWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\SingletonMonoBehaviour_LuaMgrBridgeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ComponentWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaInterface_DebuggerWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_Texture2DWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MaterialWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_PhysicsWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AudioSourceWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationStateWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_InputWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MeshRendererWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaProfilerWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ApplicationWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_MonoBehaviourWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_LightWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaInterface_InjectTypeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimatorWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RendererWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TimeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AssetBundleWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationBlendModeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RigidbodyWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AsyncOperationWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SphereColliderWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\EnterLuaScheduleWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_BehaviourWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_QueueModeWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AudioBehaviourWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\LuaBinder.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TransformWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RenderSettingsWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ResourcesWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_CapsuleColliderWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_ParticleSystemWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_QualitySettingsWrap.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_TextureWrap.cs" />
      <None Include="Assets\Art\PolygonNature\Shaders\SyntyStudios_LOD.shader" />
      <None Include="Assets\ThirdParty\ToLua\Injection\InjectionBlackList.txt" />
      <None Include="Assets\ThirdParty\ToLua\readme.txt" />
@@ -505,13 +505,13 @@
  <HintPath>E:/Program Files/Unity/Editor/2020.3.22f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Debugger">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Assets/Plugins/Debugger.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Assets/Plugins/Debugger.dll</HintPath>
  </Reference>
  <Reference Include="CString">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Assets/Plugins/CString.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Assets/Plugins/CString.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>E:/Program Files/Unity/Editor/2020.3.22f1c1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -859,34 +859,34 @@
  <HintPath>E:/Program Files/Unity/Editor/2020.3.22f1c1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>F:/workspace/unity/MetaGame/openworld/client/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>F:/workspace/unity/MetaGame/client/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
