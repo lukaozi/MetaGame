@@ -1,4 +1,6 @@
 package meta.net.netty;
 
-public class NettyServer {
+import meta.net.transport.AbstractServer;
+
+public class NettyServer extends AbstractServer {
 }
