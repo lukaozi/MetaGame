@@ -1,11 +1,9 @@
 syntax = "proto3";
 
-// 声明生成消息类的java包路径
-option java_package = "meta.protoc";
 // 声明生成消息类的类名
-option java_outer_classname = "MessageBase";
+option java_outer_classname = "ClientMessageBase";
 
 message MessageBase {
-  string clientId = 1;
+  int64 clientId = 1;
   string data = 2;
 }

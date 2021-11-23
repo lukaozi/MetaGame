@@ -11,5 +11,13 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ProtoBufManager {
 
-    private final Map<Integer, Message> messageTemplateMap = new ConcurrentHashMap<>();
+    private static final Map<Integer, Message> MESSAGE_ID = new ConcurrentHashMap<>();
+
+    private static final Map<Class<? extends Message>, Integer> ID_MESSAGE = new ConcurrentHashMap<>();
+
+
+    public void register(int messageId, Message message) {
+        MESSAGE_ID.putIfAbsent(messageId, message);
+        ID_MESSAGE.putIfAbsent(message.getClass(), messageId);
+    }
 }

@@ -20,6 +20,7 @@
         <protoc.version>3.19.1</protoc.version>
         <guava.version>31.0.1-jre</guava.version>
         <quasar.version>0.8.0</quasar.version>
+        <protostuff.version>1.0.8</protostuff.version>
     </properties>
 
     <dependencyManagement>
@@ -88,6 +89,17 @@
             <groupId>co.paralleluniverse</groupId>
             <artifactId>quasar-reactive-streams</artifactId>
             <version>${quasar.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-core</artifactId>
+            <version>${protostuff.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>${protostuff.version}</version>
         </dependency>
 
     </dependencies>
