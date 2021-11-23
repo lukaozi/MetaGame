@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+// 声明生成消息类的类名
+option java_outer_classname = "ClientMessageBase";
+
+message MessageBase {
+  int64 clientId = 1;
+  string data = 2;
+}
