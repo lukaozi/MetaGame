@@ -1,3 +1,3 @@
-,1,,
-server,id,je,name
-,1,2,nishishui
+client,id,age,name
+server,id,age,name
+end,1,2,nishishui
