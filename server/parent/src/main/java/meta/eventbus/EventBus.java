@@ -24,6 +24,8 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 @Component
 public class EventBus {
 
+    private final Logger logger =  LoggerFactory.getLogger(EventBus.class);
+
     private static EventBus instance;
 
     public static EventBus getInstance() {
@@ -34,8 +36,6 @@ public class EventBus {
     private void init() {
         instance = this;
     }
-
-    private final Logger logger =  LoggerFactory.getLogger(EventBus.class);
 
     private final int THREAD_SIZE = 3;
 
@@ -83,6 +83,15 @@ public class EventBus {
         update(event, subscribers);
     }
 
+    public void asyncSubmit(final IEvent event) {
+        final List<Subscriber> subscribers = subscribersMap.get(event.getClass());
+        if (CollectionUtils.isEmpty(subscribers)) {
+            return;
+        }
+        ExecutorService executorService = selectExecutorService(event);
+        executorService.submit(() -> update(event,subscribers));
+    }
+
     private void update(IEvent event, List<Subscriber> subscribers) {
         for (Subscriber subscriber : subscribers) {
             Method method = subscriber.getMethod();
@@ -93,15 +102,6 @@ public class EventBus {
                 logger.info(e.getMessage());
             }
         }
-    }
-
-    public void asyncSubmit(final IEvent event) {
-        final List<Subscriber> subscribers = subscribersMap.get(event.getClass());
-        if (CollectionUtils.isEmpty(subscribers)) {
-            return;
-        }
-        ExecutorService executorService = selectExecutorService(event);
-        executorService.submit(() -> update(event,subscribers));
     }
 
     private ExecutorService selectExecutorService(IEvent event) {
