@@ -20,7 +20,9 @@
         <protoc.version>3.19.1</protoc.version>
         <guava.version>31.0.1-jre</guava.version>
         <quasar.version>0.8.0</quasar.version>
-        <protostuff.version>1.0.8</protostuff.version>
+        <protostuff.version>1.1.6</protostuff.version>
+        <csv.version>5.5.2</csv.version>
+        <fastJson.version>1.2.78</fastJson.version>
     </properties>
 
     <dependencyManagement>
@@ -56,6 +58,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
@@ -101,6 +109,23 @@
             <artifactId>protostuff-runtime</artifactId>
             <version>${protostuff.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>${csv.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastJson.version}</version>
+        </dependency>
+
+
 
     </dependencies>
 </project>
