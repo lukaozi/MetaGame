@@ -12,6 +12,4 @@ public class TService {
 
     CsvMap<Integer,TResource> resourceCsvMap;
 
-
-
 }

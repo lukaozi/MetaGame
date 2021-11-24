@@ -10,6 +10,7 @@ public enum OrderNum {
     CSV(1),
     DB(2),
     SERVICE(3),
+    EVENT_BUS(4),
     ;
 
     int value;
