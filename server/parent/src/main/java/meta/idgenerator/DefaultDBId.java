@@ -6,7 +6,7 @@ package meta.idgenerator;
  */
 public interface DefaultDBId {
 
-    int ACCOUNT_ID = 1;
-    int PLAYER_ID = 2;
-    int ITEM_ID = 3;
+    int ACCOUNT_ID = 99;
+    int PLAYER_ID = 98;
+    int ITEM_ID = 97;
 }
