@@ -17,6 +17,8 @@ public class SimpleParser {
             return Short.parseShort(valueString);
         }else if (type.equals(Byte.class) || type.equals(byte.class)) {
             return Byte.parseByte(valueString);
+        }else if (type.equals(String.class)) {
+            return valueString;
         }
         return FastJsonUtils.fromJson(valueString,type);
     }

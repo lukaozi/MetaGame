@@ -73,6 +73,9 @@ public class CsvUtil {
             Integer index = entry.getValue();
             String valueString = single[index];
             Class<?> type = ReflectionUtils.getFieldType(valueClass, fieldName);
+            if (type == null) {
+                continue;
+            }
             Object value = SimpleParser.getFieldValueFromJson(type, valueString);
             ReflectionUtils.setFieldValue(resource, fieldName, value);
         }
