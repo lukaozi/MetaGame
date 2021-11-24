@@ -13,19 +13,15 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class IDGenerator {
 
-    private static final ConcurrentHashMap<IDType, SnowFlakeIdWorker> SNOW_FLAKE_ID_WORKER_MAP = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<Integer, SnowFlakeIdWorker> SNOW_FLAKE_ID_WORKER_MAP = new ConcurrentHashMap<>();
 
-    private final static ConcurrentHashMap<IDType, AtomicLong> LOCAL_ID_MAP = new ConcurrentHashMap<>();
+    private final static ConcurrentHashMap<Integer, AtomicLong> LOCAL_ID_MAP = new ConcurrentHashMap<>();
 
-    public static Long createId(IDType type) {
-        if (type.isSave()) {
-            return createIdBySnowFlake(type);
-        } else {
-            return createIdLocal(type);
-        }
+    public static Long createDBId(int type) {
+        return createIdBySnowFlake(type);
     }
 
-    private static Long createIdLocal(IDType type) {
+    private static Long createLocalId(int type) {
         AtomicLong atomicLong = LOCAL_ID_MAP.get(type);
         if (atomicLong == null) {
             AtomicLong value = new AtomicLong(0);
@@ -35,7 +31,7 @@ public class IDGenerator {
         return atomicLong.addAndGet(1L);
     }
 
-    private static Long createIdBySnowFlake(IDType type) {
+    private static Long createIdBySnowFlake(int type) {
         SnowFlakeIdWorker snowFlakeIdWorker = SNOW_FLAKE_ID_WORKER_MAP.get(type);
         if (snowFlakeIdWorker == null) {
             SnowFlakeIdWorker value = new SnowFlakeIdWorker(1);
