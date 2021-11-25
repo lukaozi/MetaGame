@@ -11,16 +11,17 @@ import meta.protobuf.netty.ProtoBufEncoder;
 /**
  * @author: AK-47
  * @date: 2021/11/23
+ *
+ * 对 客户端（Unity）通信
  */
-public class ProtoBufTcpChannelInitializer extends ChannelInitializer<SocketChannel> {
+public class OuterTcpChannelInitializer extends ChannelInitializer<SocketChannel> {
 
     @Override
-    protected void initChannel(SocketChannel ch) throws Exception {
+    protected void initChannel(SocketChannel ch) {
         ChannelPipeline pipeline = ch.pipeline();
         pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4));
         pipeline.addLast(new LengthFieldPrepender(4));
         pipeline.addLast(new ProtoBufDecoder());
         pipeline.addLast(new ProtoBufEncoder());
-
     }
 }
