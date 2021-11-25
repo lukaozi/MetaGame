@@ -337,6 +337,9 @@
  <Reference Include="Newtonsoft.Json">
  <HintPath>F:/workspace/unity/MetaGame/client/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
+ <Reference Include="CommandLine">
+ <HintPath>F:/workspace/unity/MetaGame/client/Assets/Plugins/CommandLine.dll</HintPath>
+ </Reference>
  <Reference Include="nunit.framework">
  <HintPath>F:/workspace/unity/MetaGame/client/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
