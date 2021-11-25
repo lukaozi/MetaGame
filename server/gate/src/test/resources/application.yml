@@ -1,6 +1,0 @@
-spring:
-  data:
-    mongodb:
-      host: 127.0.0.1
-      database: metarpg
-      port: 27017
