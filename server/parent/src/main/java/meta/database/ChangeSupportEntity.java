@@ -1,6 +1,8 @@
 package meta.database;
 
 
+import org.springframework.data.annotation.Transient;
+
 import java.util.Map;
 
 /**
@@ -12,10 +14,11 @@ public abstract class ChangeSupportEntity<PK> extends AbstractEntity<PK>{
     /**
      * 增量更新支持
      */
+    @Transient
     private EntityUpdateSupport support = new EntityUpdateSupport(this.getClass());
 
 
-    public Map<String,String> getChangeValueMap() {
+    public Map<String,Object> getChangeValueMap() {
         return support.getUpdateValueMap(this);
     }
 }

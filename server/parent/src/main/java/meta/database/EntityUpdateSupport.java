@@ -25,8 +25,8 @@ public class EntityUpdateSupport {
 
     private Map<String, Object> oldValueMap = new HashMap<>();
 
-    public Map<String, String> getUpdateValueMap(AbstractEntity entity) {
-        Map<String, String> result = new HashMap<>();
+    public Map<String, Object> getUpdateValueMap(AbstractEntity entity) {
+        Map<String, Object> result = new HashMap<>();
         Field[] declaredFields = entityClazz.getDeclaredFields();
         for (Field field : declaredFields) {
             if (!ReflectionUtils.isBaseType(field)) {
@@ -42,7 +42,7 @@ public class EntityUpdateSupport {
             }
             Object oldValue = oldValueMap.put(fieldName, fieldValue);
             if (oldValue == null || !oldValue.equals(fieldValue)) {
-                result.put(fieldName, SimpleParser.toString(fieldValue));
+                result.put(fieldName, fieldValue);
             }
         }
         return result;

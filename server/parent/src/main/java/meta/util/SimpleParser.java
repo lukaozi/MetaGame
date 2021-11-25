@@ -21,8 +21,4 @@ public class SimpleParser {
         }
         return FastJsonUtils.fromJson(valueString,type);
     }
-
-    public static String toString(Object type) {
-        return String.valueOf(type);
-    }
 }
