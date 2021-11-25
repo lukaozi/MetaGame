@@ -9,7 +9,7 @@ import java.util.Map;
  * @author: AK-47
  * @date: 2021/11/25
  */
-public abstract class ChangeSupportEntity<PK> extends AbstractEntity<PK>{
+public abstract class ChangeSupportEntity<PK> implements Entity<PK> {
 
     /**
      * 增量更新支持

@@ -37,7 +37,6 @@ public class TestApplication {
         template.save(testEntity);
         testEntity.getChangeValueMap();
         testEntity.setName("wohao");
-        testEntity.setAge(223);
         Map<String, Object> map = testEntity.getChangeValueMap();
         Query query = new Query(Criteria.where("id").is(testEntity.getId()));
         Update update = new Update();

@@ -17,15 +17,15 @@ import java.util.Map;
  */
 public class EntityUpdateSupport {
 
-    private Class<? extends AbstractEntity> entityClazz;
+    private Class<? extends Entity> entityClazz;
 
-    public EntityUpdateSupport(Class<? extends AbstractEntity> entityClazz) {
+    public EntityUpdateSupport(Class<? extends Entity> entityClazz) {
         this.entityClazz = entityClazz;
     }
 
     private Map<String, Object> oldValueMap = new HashMap<>();
 
-    public Map<String, Object> getUpdateValueMap(AbstractEntity entity) {
+    public Map<String, Object> getUpdateValueMap(Entity entity) {
         Map<String, Object> result = new HashMap<>();
         Field[] declaredFields = entityClazz.getDeclaredFields();
         for (Field field : declaredFields) {
