@@ -2,12 +2,12 @@ package meta.csv;
 
 import com.opencsv.CSVReader;
 import meta.util.ReflectionUtils;
+import meta.util.SimpleParser;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.ResourceUtils;
 
 import java.io.*;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

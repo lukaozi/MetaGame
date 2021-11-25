@@ -1,5 +1,6 @@
 package meta.util;
 
+import java.io.File;
 import java.lang.reflect.Field;
 
 /**
@@ -41,5 +42,17 @@ public class ReflectionUtils {
         Field field = aClass.getDeclaredField(fieldName);
         field.setAccessible(true);
         field.set(object, fieldValue);
+    }
+
+    /**
+     * @return 是否基础数据类型
+     */
+    public static boolean isBaseType(Field field) {
+        Class<?> type = field.getType();
+        return type.equals(Long.class) || type.equals(long.class)
+                || type.equals(Integer.class) || type.equals(int.class)
+                || type.equals(Short.class) || type.equals(short.class)
+                || type.equals(Byte.class) || type.equals(byte.class)
+                || type.equals(String.class);
     }
 }

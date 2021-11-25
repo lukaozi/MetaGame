@@ -1,6 +1,5 @@
-package meta.csv;
+package meta.util;
 
-import meta.util.FastJsonUtils;
 
 /**
  * @author: AK-47
@@ -21,5 +20,9 @@ public class SimpleParser {
             return valueString;
         }
         return FastJsonUtils.fromJson(valueString,type);
+    }
+
+    public static String toString(Object type) {
+        return String.valueOf(type);
     }
 }
