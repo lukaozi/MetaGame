@@ -173,6 +173,7 @@ namespace MetaGame
 		public void ConnectAsync(IPEndPoint ipEndPoint)
 		{
 			this.outArgs.RemoteEndPoint = ipEndPoint;
+			Log.Msg("开始连接：" + ipEndPoint.ToString());
 			if (this.socket.ConnectAsync(this.outArgs))
 			{
 				return;
@@ -193,6 +194,8 @@ namespace MetaGame
 				this.OnError((int)e.SocketError);	
 				return;
 			}
+			
+			Log.Msg("成功连接");
 
 			e.RemoteEndPoint = null;
 			this.isConnected = true;

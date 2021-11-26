@@ -18,15 +18,15 @@ namespace MetaGame
 				SynchronizationContext.SetSynchronizationContext(OneThreadSynchronizationContext.Instance);
 
 				DontDestroyOnLoad(gameObject);
-//				Game.EventSystem.Add(DLLType.Model, typeof(Init).Assembly);
+				Game.EventSystem.Add(DLLType.Model, typeof(Init).Assembly);
 
 				Game.Scene.AddComponent<TimerComponent>();
 //				Game.Scene.AddComponent<GlobalConfigComponent>();
 				Game.Scene.AddComponent<NetOuterComponent>();
-//				Game.Scene.AddComponent<ResourcesComponent>();
+				Game.Scene.AddComponent<ResourcesComponent>();
 //				Game.Scene.AddComponent<PlayerComponent>();
 //				Game.Scene.AddComponent<UnitComponent>();
-//				Game.Scene.AddComponent<UIComponent>();
+				Game.Scene.AddComponent<UIComponent>();
 
 				// 下载ab包
 //				await BundleHelper.DownloadBundle();
@@ -43,6 +43,9 @@ namespace MetaGame
 //				Game.Hotfix.GotoHotfix();
 
 //				Game.EventSystem.Run(EventIdType.TestHotfixSubscribMonoEvent, "TestHotfixSubscribMonoEvent");
+				LoginMgr.instance.Start();
+				
+				Application.targetFrameRate = GlobalConst.FPS;
 			}
 			catch (Exception e)
 			{

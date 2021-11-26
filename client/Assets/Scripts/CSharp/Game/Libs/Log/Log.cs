@@ -1,161 +1,73 @@
 using System;
-using System.Diagnostics;
-using System.IO;
-using System.Net;
-using MetaGame;
-
-#if NOT_UNITY
-using NLog;
-#endif
 
 
 public static class Log
 {
-    public static ILog ILog { get; set; }
-
-    private const int TraceLevel = 1;
-    private const int DebugLevel = 2;
-    private const int InfoLevel = 3;
-    private const int WarningLevel = 4;
-
-    private static bool CheckLogLevel(int level)
-    {
-        return Options.Instance.LogLevel <= level;
-    }
-
     public static void Trace(string msg)
     {
-        if (!CheckLogLevel(DebugLevel))
-        {
-            return;
-        }
-
-        StackTrace st = new StackTrace(1, true);
-        ILog.Trace($"{msg}\n{st}");
+        UnityEngine.Debug.Log(msg);
     }
 
     public static void Debug(string msg)
     {
-        if (!CheckLogLevel(DebugLevel))
-        {
-            return;
-        }
-
-        ILog.Debug(msg);
+        UnityEngine.Debug.Log(msg);
     }
 
     public static void Info(string msg)
     {
-        if (!CheckLogLevel(InfoLevel))
-        {
-            return;
-        }
-
-        ILog.Info(msg);
-    }
-
-    public static void TraceInfo(string msg)
-    {
-        if (!CheckLogLevel(InfoLevel))
-        {
-            return;
-        }
-
-        StackTrace st = new StackTrace(1, true);
-        ILog.Trace($"{msg}\n{st}");
+        UnityEngine.Debug.Log(msg);
     }
 
     public static void Warning(string msg)
     {
-        if (!CheckLogLevel(WarningLevel))
-        {
-            return;
-        }
-
-        ILog.Warning(msg);
+        UnityEngine.Debug.LogWarning(msg);
     }
 
     public static void Error(string msg)
     {
-        StackTrace st = new StackTrace(1, true);
-        ILog.Error($"{msg}\n{st}");
+        UnityEngine.Debug.LogError(msg);
     }
 
     public static void Error(Exception e)
     {
-        string str = e.ToString();
-        ILog.Error(str);
+        UnityEngine.Debug.LogException(e);
+    }
+
+    public static void Fatal(string msg)
+    {
+        UnityEngine.Debug.LogAssertion(msg);
     }
 
     public static void Trace(string message, params object[] args)
     {
-        if (!CheckLogLevel(TraceLevel))
-        {
-            return;
-        }
-
-        StackTrace st = new StackTrace(1, true);
-        ILog.Trace($"{string.Format(message, args)}\n{st}");
+        UnityEngine.Debug.LogFormat(message, args);
     }
 
     public static void Warning(string message, params object[] args)
     {
-        if (!CheckLogLevel(WarningLevel))
-        {
-            return;
-        }
-
-        ILog.Warning(string.Format(message, args));
+        UnityEngine.Debug.LogWarningFormat(message, args);
     }
 
     public static void Info(string message, params object[] args)
     {
-        if (!CheckLogLevel(InfoLevel))
-        {
-            return;
-        }
-
-        ILog.Info(string.Format(message, args));
+        UnityEngine.Debug.LogFormat(message, args);
     }
 
     public static void Debug(string message, params object[] args)
     {
-        if (!CheckLogLevel(DebugLevel))
-        {
-            return;
-        }
-
-        ILog.Debug(string.Format(message, args));
+        UnityEngine.Debug.LogFormat(message, args);
     }
 
     public static void Error(string message, params object[] args)
     {
-        StackTrace st = new StackTrace(1, true);
-        string s = string.Format(message, args) + '\n' + st;
-        ILog.Error(s);
+        UnityEngine.Debug.LogErrorFormat(message, args);
     }
 
-    public static void Console(string message)
+    public static void Fatal(string message, params object[] args)
     {
-        if (Options.Instance.Console == 1)
-        {
-            System.Console.WriteLine(message);
-        }
-
-        ILog.Debug(message);
+        UnityEngine.Debug.LogAssertionFormat(message, args);
     }
 
-    public static void Console(string message, params object[] args)
-    {
-        string s = string.Format(message, args);
-        if (Options.Instance.Console == 1)
-        {
-            System.Console.WriteLine(s);
-        }
-
-        ILog.Debug(s);
-    }
-    
     public static void Msg(object msg)
     {
         Debug(Dumper.DumpAsString(msg));
