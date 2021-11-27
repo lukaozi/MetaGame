@@ -10,21 +10,20 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author: AK-47
  * @date: 2021/11/25
+ *
+ * GUAVA LRU实现
  */
-public class EntityCache<PK extends Comparable<PK> & Serializable, E extends Entity<PK>> {
-
-    public final static int DEFAULT_CACHE_SIZE = 3000;
-
-    public final static long DEFAULT_EXPIRE_TIME = 24 * 60 * 60 * 1000L;
+public class GuavaEntityCache<PK extends Comparable<PK> & Serializable, E extends Entity<PK>> extends AbstractEntityCache<PK, E> {
 
     private final Class<? extends Entity<PK>> entityClazz;
 
     private Cache<PK, E> cache;
 
-    public EntityCache(Class<? extends Entity<PK>> entityClazz) {
+    public GuavaEntityCache(Class<? extends Entity<PK>> entityClazz) {
         this.entityClazz = entityClazz;
     }
 
+    @Override
     public void initCache() {
         int cacheSize = DEFAULT_CACHE_SIZE;
         long expire = DEFAULT_EXPIRE_TIME;
@@ -39,15 +38,17 @@ public class EntityCache<PK extends Comparable<PK> & Serializable, E extends Ent
                 .build();
     }
 
-
+    @Override
     public void remove(PK pk) {
         cache.invalidate(pk);
     }
 
+    @Override
     public E get(PK pk) {
         return cache.getIfPresent(pk);
     }
 
+    @Override
     public void put(PK pk, E e) {
         cache.put(pk, e);
     }

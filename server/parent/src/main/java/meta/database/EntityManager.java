@@ -1,6 +1,6 @@
 package meta.database;
 
-import meta.database.cache.EntityCache;
+import meta.database.cache.AbstractEntityCache;
 
 import java.io.Serializable;
 
@@ -13,6 +13,6 @@ public class EntityManager<PK extends Comparable<PK> & Serializable,E extends En
 
     private Class<? extends Entity<PK>> entityClazz;
 
-    private EntityCache<PK,E> cache;
+    private AbstractEntityCache<PK,E> cache;
 
 }

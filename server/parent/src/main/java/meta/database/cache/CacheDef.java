@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CacheDef {
 
-    int size() default EntityCache.DEFAULT_CACHE_SIZE;
+    int size() default GuavaEntityCache.DEFAULT_CACHE_SIZE;
 
-    long expire() default EntityCache.DEFAULT_EXPIRE_TIME;
+    long expire() default GuavaEntityCache.DEFAULT_EXPIRE_TIME;
 }
