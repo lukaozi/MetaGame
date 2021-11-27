@@ -9,7 +9,8 @@ public class GameEnter : MonoBehaviour
     
     private void Start()
     {
-        CoroutineManager.Init(this);
-        new GameEnterSchedule().Run();
+//        CoroutineManager.Init(this);
+//        new GameEnterSchedule().Run();
+//        LoginMgr.instance.Start();
     }
 }

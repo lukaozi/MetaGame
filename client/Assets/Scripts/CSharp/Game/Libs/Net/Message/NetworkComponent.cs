@@ -67,6 +67,7 @@ namespace MetaGame
 
 		public void OnAccept(AChannel channel)
 		{
+			Log.Msg("OnAccept");
 			Session session = ComponentFactory.CreateWithParent<Session, AChannel>(this, channel);
 			this.sessions.Add(session.Id, session);
 			session.Start();

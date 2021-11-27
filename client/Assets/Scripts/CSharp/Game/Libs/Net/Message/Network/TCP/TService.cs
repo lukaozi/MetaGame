@@ -76,6 +76,7 @@ namespace MetaGame
 		
 		public void AcceptAsync()
 		{
+			Log.Msg("AcceptAsync");
 			this.innArgs.AcceptSocket = null;
 			if (this.acceptor.AcceptAsync(this.innArgs))
 			{
@@ -86,6 +87,7 @@ namespace MetaGame
 
 		private void OnAcceptComplete(object o)
 		{
+			Log.Msg("OnAcceptComplete");
 			if (this.acceptor == null)
 			{
 				return;

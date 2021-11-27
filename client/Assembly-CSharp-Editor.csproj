@@ -58,27 +58,50 @@
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_UnityEngine_Input.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_LuaInterface_LuaMethod.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Injection\Editor\ToluaInjectionBlackListPanel.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\FloatTypeDrawer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_System_String.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\Vector2TypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\LongTypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawerAttribute.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_System_Enum.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\AnimationCurveTypeDrawer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_UnityEngine_RectTransform.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\ToLuaTree.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\ToLuaMenu.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\ComponentViewEditor.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\CharTypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\EnumTypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\Vector4TypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\IntTypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\BoolTypeDrawer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\Editor\CLuaSeriazablePropertyItem.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\BoundsTypeDrawer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Injection\Editor\ToLuaInjectionHelper.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\RectTypeDrawer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\Editor\StringHelper.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_UnityEngine_Object.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_LuaInterface_LuaField.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\DateTimeTypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\ITypeDrawer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\Editor\LuaBehaviourBridgeEditor.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_UnityEngine_GameObject.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Injection\Editor\CustomCecilRocks\MethodBodyRocks.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\ToLuaExport.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\Entity\EditorLayout.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\ColorTypeDrawer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Lua\Editor\LuaSerializedDrawerItem.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\Vector3TypeDrawer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Editor\Custom\CustomSettings.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\Entity\SerializationTypeExtension.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_LuaInterface_LuaProperty.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\DoubleTypeDrawer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_System_Delegate.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\UnityObjectTypeDrawer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Injection\Editor\ToLuaText.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_LuaInterface_LuaConstructor.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Injection\Editor\ToLuaInjection.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\StringTypeDrawer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ReferenceCollectorEditor\ReferenceCollectorEditor.cs" />
  <Reference Include="UnityEngine">
  <HintPath>E:/Program Files/Unity/Editor/2020.3.22f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -322,6 +345,9 @@
  <Reference Include="Debugger">
  <HintPath>F:/workspace/unity/MetaGame/client/Assets/Plugins/Debugger.dll</HintPath>
  </Reference>
+ <Reference Include="CommandLine">
+ <HintPath>F:/workspace/unity/MetaGame/client/Assets/Plugins/CommandLine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
  <HintPath>F:/workspace/unity/MetaGame/client/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
@@ -336,9 +362,6 @@
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>F:/workspace/unity/MetaGame/client/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
- </Reference>
- <Reference Include="CommandLine">
- <HintPath>F:/workspace/unity/MetaGame/client/Assets/Plugins/CommandLine.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>F:/workspace/unity/MetaGame/client/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
