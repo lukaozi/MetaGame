@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message SM_Login
+{
+	int32 msgId = 1;
+    int32 resultCode = 2;
+}

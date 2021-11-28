@@ -43,7 +43,9 @@ public class LoginMgr:Singleton<LoginMgr>
             
             // 创建一个ETModel层的Session
             Session session = Game.Scene.GetComponent<NetOuterComponent>().Create(GlobalConst.GlobalProto.Address);
-            session.Call(new CMLogin() {msgId = OuterOpcode.CMLogin, Account = account});
+            SMLogin msg = (SMLogin)await session.Call(new CMLogin() {msgId = OuterOpcode.CMLogin, Account = account});
+            Log.Msg("登录返回");
+            Log.Msg(msg);
 
 //            // 创建一个ETHotfix层的Session, ETHotfix的Session会通过ETModel层的Session发送消息
 //            Session realmSession = ComponentFactory.Create<Session, ETModel.Session>(session);

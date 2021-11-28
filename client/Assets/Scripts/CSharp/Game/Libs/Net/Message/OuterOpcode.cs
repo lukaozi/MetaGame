@@ -53,6 +53,14 @@ public partial class CMLogin : IRequest
     public int RpcId { get; set; }
 }
 
+[Message(OuterOpcode.SMLogin)]
+public partial class SMLogin : IResponse
+{
+    public int Error { get; set; }
+    public string Message { get; set; }
+    public int RpcId { get; set; }
+}
+
 public static partial class OuterOpcode
 {
     public const ushort C2M_TestRequest = 101;
@@ -72,4 +80,5 @@ public static partial class OuterOpcode
     public const ushort M2C_Reload = 115;
 
     public const ushort CMLogin = 1001;
+    public const ushort SMLogin = 1002;
 }
