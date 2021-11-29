@@ -1,6 +1,7 @@
 ﻿using System;
 using MetaGame;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoginMgr:Singleton<LoginMgr>
 {
@@ -40,6 +41,9 @@ public class LoginMgr:Singleton<LoginMgr>
                 Log.Msg("先输入服务器ip和端口");
                 return;
             }
+            
+            //场景跳转
+            SceneManager.LoadSceneAsync("MainScene");
             
             // 创建一个ETModel层的Session
             Session session = Game.Scene.GetComponent<NetOuterComponent>().Create(GlobalConst.GlobalProto.Address);

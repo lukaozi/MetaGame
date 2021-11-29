@@ -55,6 +55,13 @@ namespace MetaGame
             PlayerPrefs.SetString("server_port", port);
 
             LoginMgr.OnLoginAsync(account).Coroutine();
+            
+            this.Close();
+        }
+
+        public void Close()
+        {
+            GameApi.CloseUI(UIType.UILogin);
         }
     }
 }
