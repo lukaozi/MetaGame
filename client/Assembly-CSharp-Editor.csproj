@@ -66,6 +66,7 @@
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_System_Enum.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\AnimationCurveTypeDrawer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_UnityEngine_RectTransform.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ReferenceCollectorEditor\ReferenceCollectorEditor.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\ToLuaTree.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Editor\ToLuaMenu.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\ComponentViewEditor.cs" />
@@ -101,7 +102,6 @@
      <Compile Include="Assets\ThirdParty\ToLua\Editor\Extend\ToLua_LuaInterface_LuaConstructor.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Injection\Editor\ToLuaInjection.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ComponentViewEditor\TypeDrawer\StringTypeDrawer.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Editor\ReferenceCollectorEditor\ReferenceCollectorEditor.cs" />
  <Reference Include="UnityEngine">
  <HintPath>E:/Program Files/Unity/Editor/2020.3.22f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

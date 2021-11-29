@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message CM_Login
+{
+	int32 msgId = 1;
+    string account = 2;
+}
