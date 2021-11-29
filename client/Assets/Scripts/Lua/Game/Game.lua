@@ -3,9 +3,22 @@
 --- Created by Yuk.
 --- DateTime: 2021/7/12 1:25
 ---
-local _M = {}
+---
+require("Game.Libs.Util.class")
 
---BaseObject = require("Game.Libs.Module.BaseObject")
-print("hello word")
+---@class Game:Object
+local _M = singleton("Game")
 
-return _M
+---@param self Game
+---@return Game
+function _M.New(self)
+    --BaseObject = require("Game.Libs.Module.BaseObject")
+    print("hello word")
+    coroutine.start(self.CoInit, self)
+end
+
+function _M:CoInit()
+    
+end
+
+return _M:New()

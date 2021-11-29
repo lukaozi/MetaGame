@@ -62,6 +62,7 @@ __index = true}
 
 function class(className, super, isSingleton)
     if type(className) ~= "string" then
+        print(type(className))
         error("className must be string")
     end
 
@@ -175,7 +176,7 @@ function class(className, super, isSingleton)
     return class_type
 end
 
-function singleton()
+function singleton(className, super)
     return class(className, super, true)
 end
 
