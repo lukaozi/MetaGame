@@ -1,6 +1,7 @@
 package meta.test;
 
 import meta.csv.CsvMap;
+import meta.database.EntityManager;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,5 +12,7 @@ import org.springframework.stereotype.Component;
 public class TService {
 
     CsvMap<Integer,TResource> resourceCsvMap;
+
+    EntityManager<Integer,TEntity> entityManager;
 
 }
