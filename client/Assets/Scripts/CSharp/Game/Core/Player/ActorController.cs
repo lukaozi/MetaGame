@@ -13,6 +13,7 @@ public class ActorController : MonoBehaviour
 
     public float jumpVelocity = 2.0f;
     public float rollVelocity = 3.0f;
+    public float gravity = 20.0f;
 
     [Space(10)]
     [Header("===== Friction Settings =====")]
@@ -23,6 +24,7 @@ public class ActorController : MonoBehaviour
     private Animator anim;
     private PlayerInput playerInput;
     private Rigidbody rigid;
+    private CharacterController characterController;
     private CapsuleCollider col;
     private float lerpTarget;
 
@@ -51,6 +53,7 @@ public class ActorController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         rigid = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
+        characterController = GetComponent<CharacterController>();
 
         Gb.weaponPos0Transform = weaponPos0Transform;
         Gb.weaponPos1Transform = weaponPos1Transform;
@@ -72,7 +75,11 @@ public class ActorController : MonoBehaviour
             canAttack = false;
         }
 
-        if(rigid.velocity.magnitude > 1.0f)
+        if(rigid && rigid.velocity.magnitude > 1.0f)
+        {
+            anim.SetTrigger("roll");
+        }
+        else if (characterController && characterController.velocity.magnitude > 1.0f)
         {
             anim.SetTrigger("roll");
         }
@@ -93,9 +100,19 @@ public class ActorController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigid.position += deltaPos;
-        //rigid.position += movingVec * Time.fixedDeltaTime;
-        rigid.velocity = new Vector3(planarVec.x, rigid.velocity.y, planarVec.z) + thrustVec;
+        if (rigid)
+        {
+            rigid.position += deltaPos;
+            //rigid.position += movingVec * Time.fixedDeltaTime;
+            rigid.velocity = new Vector3(planarVec.x, rigid.velocity.y, planarVec.z) + thrustVec;
+        }
+        else
+        {
+            var motion = new Vector3(planarVec.x, characterController.velocity.y, planarVec.z) + thrustVec;
+            motion.y -= gravity * Time.fixedDeltaTime;
+            characterController.Move(motion * Time.fixedDeltaTime);
+        }
+       
         thrustVec = Vector3.zero;
         deltaPos = Vector3.zero;
     }
@@ -180,12 +197,14 @@ public class ActorController : MonoBehaviour
 
     public void OnAttack1hAEnter()
     {
+        Debug.Log("OnAttack1hAEnter");
         playerInput.inputEnabled = false;
         lerpTarget = 1.0f;
     }
 
     public void OnAttack1hAUpdate()
     {
+        Debug.Log("OnAttack1hAUpdate");
         thrustVec = model.transform.forward * anim.GetFloat("attack1hAVelocity");
         float curWeight = anim.GetLayerWeight(anim.GetLayerIndex("attack"));
         curWeight = Mathf.Lerp(curWeight, lerpTarget, 0.1f);

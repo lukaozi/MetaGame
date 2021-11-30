@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Component\Config\InnerConfig.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\ISerializerProxy.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\UI\UIFactoryAttribute.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Generate\proto\PlayerVO.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\Message\MessageProxy.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\DictionaryInterfaceImplementerSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\11_Delegate\TestEventListenerWrap.cs" />
@@ -105,7 +106,7 @@
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_WWWWrap.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\JsonToken.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\EnumSerializer.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\PlayerInput.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaMethodCache.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\IDictionaryRepresentationConfigurable.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\ObjectTranslator.cs" />
@@ -268,6 +269,7 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\FileHelper.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\ProjectingDeserializer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\EditorExtend\AutoRelease\AutoBeginVertical.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Cfg\CfgMgr.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\VersionSerializer.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\TagDecorator.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\UInt32Serializer.cs" />
@@ -307,7 +309,7 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Config\ConfigAttribute.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\BsonDateTimeSerializer.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\ObjectModel\BsonRegularExpression.cs" />
-     <Compile Include="Assets\Scripts\Player\AniTriggerController.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\AniTriggerController.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Async\AsyncETVoidMethodBuilder.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Attributes\BsonMemberMapAttributeUsageAttribute.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\IChildSerializerConfigurable.cs" />
@@ -346,13 +348,14 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\JsonWriterSettings.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Object\IStartSystem.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\Message\OuterOpcode.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Generate\proto\CM_Login.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Test\NetTest.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Attributes\BsonIgnoreAttribute.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\CharSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\UnityEngine_CoroutineWrap.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\NullDecorator.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\IgnoreIfNullConvention.cs" />
-     <Compile Include="Assets\Scripts\Player\ActorController.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\ActorController.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\Message\SessionCallbackComponent.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\ArraySerializer.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\DiscriminatedUnion.cs" />
@@ -400,12 +403,13 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\Message\Network\KCP\KService.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\ProtobufSerializer.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\ByteBufferFactory.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\GameApi.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\Message\Network\NetworkHelper.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\BsonStreamAdapter.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\MemberNameElementNameConvention.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Core\GameEnter\HotUpdate\HotUpdateSchedule.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\JsonReaderSettings.cs" />
-     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\CameraController.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Compiler\CompilerDelegates.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Log\Log.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_KeyCodeWrap.cs" />
@@ -442,6 +446,7 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\DefaultConventionPack.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\ObjectPool.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\HierarchicalDiscriminatorConvention.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\CsvTool\CsvTool.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Shared\Hasher.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\BsonWriter.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\PartiallyRawBsonDocumentSerializer.cs" />
@@ -453,7 +458,7 @@
      <Compile Include="Assets\ThirdParty\LitJson\Lexer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Core\GameEnter\GameEnterSchedule.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\ActionHelper.cs" />
-     <Compile Include="Assets\Scripts\Player\TestJoyStick.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\TestJoyStick.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\IConventionPack.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Entity\UnityWebRequestAsync.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\RecyclableMemoryStream\RecyclableMemoryStreamManager.cs" />
@@ -462,7 +467,7 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\RandomHelper.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\ObjectDiscriminatorConvention.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\04_AccessingLuaVariables\AccessingLuaVariables.cs" />
-     <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\FSMOnEnter.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Shared\ApplicationNameHelper.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Event\EnvKey.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\IdGenerators\BsonObjectIdGenerator.cs" />
@@ -473,7 +478,7 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\BsonSerializationContext.cs" />
      <Compile Include="Assets\Scripts\CSharp\Generate\proto\Person.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\JsonReaderContext.cs" />
-     <Compile Include="Assets\Scripts\Player\FSMOnUpdate.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\FSMOnUpdate.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\SocketRecvThread.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\ObjectModel\BsonMinKey.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\IdGenerater.cs" />
@@ -500,6 +505,7 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\LazyBsonDocumentSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\LuaInterface_LuaFieldWrap.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\BufferExtension.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Cfg\EnCfg.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Attributes\BsonNoIdAttribute.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_Collections_ObjectModel_ReadOnlyCollectionWrap.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\UInt32Serializer.cs" />
@@ -565,7 +571,7 @@
      <Compile Include="Assets\ThirdParty\protobuf-net\ProtoReader.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Meta\ValueMember.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\NoOpElementNameValidator.cs" />
-     <Compile Include="Assets\Scripts\Player\FSMOnExit.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\FSMOnExit.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\Message\MessageAttribute.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\23_List\UseList.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Util\Singleton.cs" />
@@ -576,7 +582,7 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\SerializeAsNominalTypeSerializer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_SleepTimeoutWrap.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\ByteArrayChunk.cs" />
-     <Compile Include="Assets\Scripts\Player\FSMClearSignals.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\FSMClearSignals.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\IPostProcessingConvention.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\BsonDocumentWriterSettings.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\BsonSerializationProviderBase.cs" />
@@ -608,7 +614,8 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\GuidSerializer.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\BsonJavaScriptWithScopeSerializer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Timer\TimeMgr.cs" />
-     <Compile Include="Assets\Scripts\Player\RootMotionController.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\CsvTool\Attributes.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\RootMotionController.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\BsonDocumentSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaFileUtils.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_BoxColliderWrap.cs" />
@@ -657,7 +664,7 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\NetUtil.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Meta\AttributeMap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Config\AConfigComponent.cs" />
-     <Compile Include="Assets\Scripts\Player\OnGroundSensor.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\OnGroundSensor.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\DiscriminatedInterfaceSerializationProvider.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\ScalarDiscriminatorConvention.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_QueueModeWrap.cs" />
@@ -711,6 +718,7 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\ObjectModel\MaterializedOnDemandBsonArray.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\ProtoEnumAttribute.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Examples\TestOverload\TestExportWrap.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\CsvTool\Example.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Attributes\BsonElementAttribute.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Attributes\IBsonCreatorMapAttribute.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\NetMgr.cs" />
@@ -746,6 +754,7 @@
      <Compile Include="Assets\ThirdParty\protobuf-net\NetObjectCache.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\ServiceModel\ProtoEndpointBehavior.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\KeyValuePairSerializer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Generate\proto\SM_Login.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\ProtoWriter.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\UInt64Serializer.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\BsonStream.cs" />
@@ -754,10 +763,10 @@
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Res\ResLoadHandlerByAssetBundle.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Net\Message\Network\TCP\TChannel.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Object\EntityEventAttribute.cs" />
-     <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\EnumSerializer.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\ObjectModel\MaterializedOnDemandBsonDocument.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_RendererWrap.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\UnityEngine_AnimationBlendModeWrap.cs" />
+     <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\EnumSerializer.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\ObjectModel\GuidConverter.cs" />
      <Compile Include="Assets\ThirdParty\ToLua\Core\LuaMatchType.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\Int32Serializer.cs" />
@@ -772,9 +781,9 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\IdGenerators\AscendingGuidGenerator.cs" />
      <Compile Include="Assets\Scripts\CSharp\Tolua\Generate\DelegateFactory.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\IO\ContextType.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Object\Component.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Conventions\StandardDiscriminatorConvention.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\BsonObjectModelSerializationProvider.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Libs\Object\Component.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Libs\Res\ResMgr.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\ProtoIncludeAttribute.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\ImpliedImplementationInterfaceSerializer.cs" />
@@ -844,8 +853,6 @@
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_NullObjectWrap.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Exceptions\DuplicateBsonMemberMapAttributeException.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\BsonArraySerializer.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Generate\proto\CM_Login.cs" />
-     <Compile Include="Assets\Scripts\CSharp\Generate\proto\PlayerVO.cs" />
      <None Include="Assets\Art\PolygonNature\Shaders\SyntyStudios_LOD.shader" />
      <None Include="Assets\ThirdParty\ToLua\Injection\InjectionBlackList.txt" />
      <None Include="Assets\smcs.rsp" />
