@@ -1,8 +1,7 @@
-package meta.database;
+package meta.database.persister;
 
 
 import meta.util.ReflectionUtils;
-import meta.util.SimpleParser;
 
 import java.beans.Transient;
 import java.lang.reflect.Field;

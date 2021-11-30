@@ -9,8 +9,8 @@ package meta.springsupport;
 public enum OrderNum {
     CSV(1),
     DB(2),
-    SERVICE(3),
-    EVENT_BUS(4),
+    EVENT_BUS(3),
+    SERVICE(4),
     ;
 
     int value;
@@ -20,6 +20,6 @@ public enum OrderNum {
     }
 
     public int getOrder() {
-        return Integer.MAX_VALUE - value;
+        return Integer.MAX_VALUE - 100 + value;
     }
 }

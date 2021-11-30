@@ -1,6 +1,6 @@
 package meta.test;
 
-import meta.database.ChangeSupportEntity;
+import meta.database.persister.ChangeSupportEntity;
 
 /**
  * @author: AK-47

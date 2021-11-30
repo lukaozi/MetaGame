@@ -1,4 +1,4 @@
-package meta.database;
+package meta.database.persister;
 
 /**
  * @author: AK-47

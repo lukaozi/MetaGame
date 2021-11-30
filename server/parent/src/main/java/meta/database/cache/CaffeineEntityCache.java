@@ -2,8 +2,7 @@ package meta.database.cache;
 
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
-import com.github.benmanes.caffeine.cache.LoadingCache;
-import meta.database.Entity;
+import meta.database.persister.Entity;
 
 import java.io.Serializable;
 import java.time.Duration;

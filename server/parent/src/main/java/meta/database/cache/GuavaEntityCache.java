@@ -2,7 +2,7 @@ package meta.database.cache;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import meta.database.Entity;
+import meta.database.persister.Entity;
 
 import java.io.Serializable;
 import java.util.concurrent.TimeUnit;

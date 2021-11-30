@@ -1,6 +1,8 @@
-package meta.database;
+package meta.database.persister;
 
 
+import meta.database.persister.Entity;
+import meta.database.persister.EntityUpdateSupport;
 import org.springframework.data.annotation.Transient;
 
 import java.util.Map;

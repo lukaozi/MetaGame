@@ -1,7 +1,7 @@
 package meta.test;
 
 import meta.csv.CsvMap;
-import meta.database.EntityManager;
+import meta.database.persister.EntityManager;
 import org.springframework.stereotype.Component;
 
 /**

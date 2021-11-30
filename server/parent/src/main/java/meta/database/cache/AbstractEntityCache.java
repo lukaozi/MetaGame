@@ -1,6 +1,6 @@
 package meta.database.cache;
 
-import meta.database.Entity;
+import meta.database.persister.Entity;
 
 import java.io.Serializable;
 
