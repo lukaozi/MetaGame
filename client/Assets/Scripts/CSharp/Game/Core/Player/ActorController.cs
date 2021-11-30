@@ -197,12 +197,14 @@ public class ActorController : MonoBehaviour
 
     public void OnAttack1hAEnter()
     {
+        Debug.Log("OnAttack1hAEnter");
         playerInput.inputEnabled = false;
         lerpTarget = 1.0f;
     }
 
     public void OnAttack1hAUpdate()
     {
+        Debug.Log("OnAttack1hAUpdate");
         thrustVec = model.transform.forward * anim.GetFloat("attack1hAVelocity");
         float curWeight = anim.GetLayerWeight(anim.GetLayerIndex("attack"));
         curWeight = Mathf.Lerp(curWeight, lerpTarget, 0.1f);
