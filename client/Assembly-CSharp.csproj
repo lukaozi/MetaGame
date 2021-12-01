@@ -855,6 +855,8 @@
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\BsonArraySerializer.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\BaseInput.cs" />
      <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\EnemyInput.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\BattleComponent.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\ActorManager.cs" />
      <None Include="Assets\Art\PolygonNature\Shaders\SyntyStudios_LOD.shader" />
      <None Include="Assets\ThirdParty\ToLua\Injection\InjectionBlackList.txt" />
      <None Include="Assets\smcs.rsp" />

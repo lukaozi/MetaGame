@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 638805883671815506}
   - component: {fileID: 638805883671815502}
   - component: {fileID: 4765276955534460228}
+  - component: {fileID: 3358019017857257308}
   m_Layer: 0
   m_Name: EnemyHandle
   m_TagString: Untagged
@@ -201,6 +202,19 @@ MonoBehaviour:
   jump: 0
   attack: 0
   inputEnabled: 1
+--- !u!114 &3358019017857257308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638805883671815507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10f3d5ea97b14c93a9f93c22e3d41c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleComponent: {fileID: 0}
 --- !u!1 &638805884233202781
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638805884233202780}
   - component: {fileID: 638805884233202779}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: sensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
