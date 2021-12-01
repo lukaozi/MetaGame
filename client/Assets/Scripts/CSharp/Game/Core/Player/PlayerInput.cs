@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerInput : MonoBehaviour
+public class PlayerInput : BaseInput
 {
     [Header("===== KEY SETTING =====")]
     public string keyUp = "w";
@@ -18,35 +18,6 @@ public class PlayerInput : MonoBehaviour
     public string keyJLeft;
     public string keyJUp;
     public string keyJDown;
-
-    [Header("===== OUTPUT SIGNALS =====")]
-    public float Dup;
-    public float Dright;
-    public float Dmag;
-
-    public float Jup;
-    public float Jright;
-
-    /// <summary>
-    /// 方向
-    /// </summary>
-    public Vector3 Dvec;
-
-    public bool run;
-    public bool jump;
-    private bool lastJump;
-
-    private float targetDup;
-    private float targetDright;
-
-    private float velocityDup;
-    private float velocityDright;
-
-    public bool attack;
-    private bool lastAttack;
-
-    [Header("===== others =====")]
-    public bool inputEnabled = true;
 
     // Use this for initialization
     void Start()
@@ -77,8 +48,8 @@ public class PlayerInput : MonoBehaviour
         Dright = tempDAxis.x;
         Dup = tempDAxis.y;
 
-        Dmag = Mathf.Sqrt(Dup * Dup + Dright * Dright);
-        Dvec = transform.right * Dright + transform.forward * Dup;
+        CalDmag();
+        CalDvec();
 
         run = Input.GetKey(keyA);
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public PlayerInput pi;
+    public BaseInput pi;
 
     public float horizontalSpeed = 20.0f;
     public float verticalSpeed = 20.0f;
@@ -21,6 +21,8 @@ public class CameraController : MonoBehaviour
     private GameObject camera;
 
     private Vector3 camaraDampVelocity;
+
+    public bool IsAI = true;
 
     // Start is called before the first frame update
     void Start()
@@ -47,21 +49,24 @@ public class CameraController : MonoBehaviour
 
         model.transform.eulerAngles = tempEulerAngles;
 
-        camera.transform.position = Vector3.SmoothDamp(camera.transform.position, transform.position, ref camaraDampVelocity, cameraDampValue) ;
-        camera.transform.eulerAngles = transform.eulerAngles;
+        if (!IsAI)
+        {
+            camera.transform.position = Vector3.SmoothDamp(camera.transform.position, transform.position, ref camaraDampVelocity, cameraDampValue) ;
+            camera.transform.eulerAngles = transform.eulerAngles;
+        }
     }
 
     private void OnGUI()
     {
-        if (GUILayout.Button("远镜头"))
-        {
-            transform.localPosition = new Vector3(0, 6f, -14f);
-        }
-
-        if (GUILayout.Button("近镜头"))
-        {
-            transform.localPosition = new Vector3(0, 0.5f, -2f);
-        }
+//        if (GUILayout.Button("远镜头"))
+//        {
+//            transform.localPosition = new Vector3(0, 6f, -14f);
+//        }
+//
+//        if (GUILayout.Button("近镜头"))
+//        {
+//            transform.localPosition = new Vector3(0, 0.5f, -2f);
+//        }
         
     }
 }

@@ -22,7 +22,7 @@ public class ActorController : MonoBehaviour
 
 
     private Animator anim;
-    private PlayerInput playerInput;
+    private BaseInput playerInput;
     private Rigidbody rigid;
     private CharacterController characterController;
     private CapsuleCollider col;
@@ -47,12 +47,18 @@ public class ActorController : MonoBehaviour
     public Transform weaponPos1Transform = null;
     public Transform weaponPos2Transform = null;
 
+
+    public bool isAI = true;
+    
     void Awake()
     {
         anim = model.GetComponent<Animator>();
-        playerInput = GetComponent<PlayerInput>();
+        playerInput = GetComponent<BaseInput>();
         rigid = GetComponent<Rigidbody>();
-        col = GetComponent<CapsuleCollider>();
+        if (isAI)
+        {
+            col = GetComponent<CapsuleCollider>();
+        }
         characterController = GetComponent<CharacterController>();
 
         Gb.weaponPos0Transform = weaponPos0Transform;
@@ -165,12 +171,18 @@ public class ActorController : MonoBehaviour
     {
         DonotLockPlanar();
         canAttack = true;
-        col.material = frictionOne;
+        if (col)
+        {
+            col.material = frictionOne;
+        }
     }
 
     public void OnGroundExit()
     {
-        col.material = frictionZero;
+        if (col)
+        {
+            col.material = frictionZero;
+        }
     }
 
     public void OnFallEnter()
@@ -230,6 +242,12 @@ public class ActorController : MonoBehaviour
         {
             deltaPos += (Vector3)_deltaPos;
         }
+    }
+
+    public void OnHitEnter()
+    {
+        playerInput.inputEnabled = false;
+        planarVec= Vector3.zero;
     }
 
 }

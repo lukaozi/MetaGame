@@ -853,6 +853,8 @@
      <Compile Include="Assets\ThirdParty\ToLua\BaseType\System_NullObjectWrap.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Exceptions\DuplicateBsonMemberMapAttributeException.cs" />
      <Compile Include="Assets\ThirdParty\MongoDB\MongoDB.Bson\Serialization\Serializers\BsonArraySerializer.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\BaseInput.cs" />
+     <Compile Include="Assets\Scripts\CSharp\Game\Core\Player\EnemyInput.cs" />
      <None Include="Assets\Art\PolygonNature\Shaders\SyntyStudios_LOD.shader" />
      <None Include="Assets\ThirdParty\ToLua\Injection\InjectionBlackList.txt" />
      <None Include="Assets\smcs.rsp" />
